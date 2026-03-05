@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SOCCERGOD1810</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #00094f, #42f5c2, #001dff);
+            margin: 60px;
+            font-family: Roboto;
+            text-align: center;
+        }
+
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .tabs__label {
+            padding: 15px 21px;
+            cursor: pointer;
+            background: #e0e0e0;
+            border: 1px solid #ccc;
+        }
+
+        .tabs__radio {
+            display: none;
+        }
+
+        .tabs__content {
+            order: 1;
+            width: 100%;
+            border-bottom: 3px solid #ddd; 
+            line-height: 1.5;
+            font-size: 0.9em;
+            display: none; 
+            padding: 20px;
+            background: white;
+        }
+
+
+        @keyframes fadeIN {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        
+        .tabs__radio:checked + .tabs__label + .tabs__content {
+            display: block;
+            animation: fadeIN 0.4s ease-in-out;
+        }
+
+       
+        .tabs__radio:checked + .tabs__label {
+            background: white;
+            font-weight: bold;
+            border-bottom: 1px solid white; 
+
+
+        }
+         
+        
+        .flightplan-boxing {
+            border: 1px solid #0000FF;
+            padding: 10px;
+            margin: 10px auto;
+            max-width: 300px;
+            border-radius: 5px;
+        } 
+
+
+        a:link {
+            color: blue;
+            background-color: transparent;
+            text-decoration: underline; 
+        }
+        a:visited {
+            color: blue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:active {
+            color: orange;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color:white;">SOCCERGOD1810's website</h1>
+    
+
+    <div class="tabs">
+        <input type="radio" class="tabs__radio" name="tabs-example" id="home" checked>
+        <label for="home" class="tabs__label">Home Page</label>
+        <div class="tabs__content">
+            <h3>Home Page</h3>
+            <p>Hello there! This is <strong>SOCCERGOD1810</strong> and welcome to the website! A website where you can browse any of SOCCERGOD1810's interest! Let it be GEOFS, or Minecraft. It has everything I like, and more will be added soon!! Enjoy!</p>
+            <p>More about me!</p>
+            <p>I like soccer!</p>
+            <p>I'm in NCFC youth recreation</p>
+            <p>I also like planes! The 777-300ER is my favorite</p>
+            <p>I'm in 6th grade!</p>
+            <p>I just started coding!</p>
+        </div>
+
+        <input type="radio" class="tabs__radio" name="tabs-example" id="geofs">
+        <label for="geofs" class="tabs__label">GEOFS Flight Plans</label>
+        <div class="tabs__content">
+           
+            <h3>Flight Plans</h3>
+            <p>On this tab are the GEOFS flight plans that I flew in the past! Feel free to browse domestic and international flights I've done! Here is how to get the flight plans on your GEOFS tab! 1. Open the link (they're named after the ICAO codes of both airports! 2. It will take you to a Google doc. Copy the code in it. And 3, paste it into GEOFS and have a safe flight!</p>
+
+
+
+<h2>Plans</h2>
+
+
+<h3>International flights</h3>
+<div class="flightplan-boxing">
+            
+<p><a href="https://docs.google.com/document/d/1drOcpWihWWUTwdiZ33_rrQKfP0FANQeNKbQ1PLWBjo8/edit?tab=t.0" target="_blank">EHAM→SAEZ</a></p>
+<p>This plan uses a 747-400</p>
+    <p>~6180 Nautical Miles</p>
+    </div>
+<div class="flightplan-boxing">
+            
+<p><a href="https://docs.google.com/document/d/14joQEEju9LB1_yRPwM5i1H7UJB77591eZuXho11VzzI/edit?tab=t.0" target="_blank">KSFO→WSSS</a></p>
+<p>This plan uses a 787-9</p>
+    <p>~7530 Nautical Miles</p>
+    </div>
+<div class="flightplan-boxing">
+            
+<p><a href="https://docs.google.com/document/d/1L956CgS1EDQlzE53Bs4hJ7mibie-XAm8wrQdRAR9cas/edit?tab=t.0" target="_blank">PHNL→RJTT</a></p>
+<p>This plan uses an A330-200</p>
+    <p>~3490 Nautical Miles</p>
+    </div>
+
+<h3>Domestic Flights</h3>
+<div class="flightplan-boxing">
+            
+<p><a href="https://docs.google.com/document/d/1sMfayQ55ibKtGTmas7zRe250N7z87BZxJWpmLybIBzA/edit?tab=t.0" target="_blank">KATL→KLAX</a></p>
+<p>This plan uses a 767-400</p>
+    <p>~1690 Nautical Miles</p>
+    </div>
+<div class="flightplan-boxing">
+            
+<p><a href="https://docs.google.com/document/d/1MH3MmSNn0yzcS9uxekSUmQDl4tC-FPDXJZ2CTzmCBHE/edit?tab=t.0" target="_blank">KRDU→KEWR</a></p>
+<p>This plan uses a 737-700</p>
+    <p>~390 Nautical Miles</p>
+    </div>
+<div class="flightplan-boxing">
+            
+<p><a href="https://docs.google.com/document/d/1LCqPp8xAQULSmEJ4-cwFalFYHgX4sRGiGA3-MqExuYI/edit?tab=t.0" target="_blank">KRDU→KDEN</a></p>
+<p>This plan uses a 737-700</p>
+    <p>~1310 Nautical Miles</p>
+    </div>
+
+
+<p>More plans will be added soon!</p>
+        </div>
+
+        <input type="radio" class="tabs__radio" name="tabs-example" id="minecraft">
+        <label for="minecraft" class="tabs__label">Minecraft</label>
+        <div class="tabs__content">
+            <h3>Seeds & Builds</h3>
+            <p>Best seeds for Minecraft Java!</p>
+            <p>306261334676528482</p>
+            <P>8486672581758651406</P>
+        </div>
+
+        <input type="radio" class="tabs__radio" name="tabs-example" id="stories">
+        <label for="stories" class="tabs__label">Stories</label>
+        <div class="tabs__content">
+            <h3>These are my stories!</h3>
+            <p><a href="https://docs.google.com/document/d/16TqIPGitjR70qac4hi7hSAcU22C2cs1RETxcgUGc1kc/edit?tab=t.0" target="_blank">The night days!</a></p>
+        </div>
+
+        <input type="radio" class="tabs__radio" name="tabs-example" id="fc-mobile">
+        <label for="fc-mobile" class="tabs__label">FC Mobile</label>
+        <div class="tabs__content">
+            <h3>This is my FC Mobile team!</h3>
+            <p><img src="https://cdn.lineup-builder.co.uk/lineups/69a98b24055f01d73ce1a6f1?t=1772718905521" width="100%" style="max-width: 850px;" alt=""><br>Provided by <a href="https://www.lineup-builder.co.uk/" target="_blank" rel="noopener noreferrer">https://www.lineup-builder.co.uk/</a></p>
+            <p><img src="https://cdn.lineup-builder.co.uk/lineups/69a83816ad7c8488e3482216?t=1772632101640" width="100%" style="max-width: 850px;" alt=""><br>Provided by <a href="https://www.lineup-builder.co.uk/" target="_blank" rel="noopener noreferrer">https://www.lineup-builder.co.uk/</a></p>
+        </div>
+          
+
+    </div>
+
+</body>
+</html>
