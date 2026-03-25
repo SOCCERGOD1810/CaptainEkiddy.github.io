@@ -1,1 +1,90 @@
+        body {
+            background-image: linear-gradient(270deg, #00ffd2, #00c5ff, #00ff5e, #0078ff);
+            background-size: 400% 400%;
+            animation: aurora-flow 10s ease infinite;
+            margin: 20px auto;
+            font-family: 'Ramabhadra', sans-serif;
+            text-align: center;
+        }
+
+        @keyframes aurora-flow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .tabs__label {
+            padding: 15px 21px;
+            cursor: pointer;
+            background: #e0e0e0;
+            border: 1px solid #ccc;
+        }
+
+        .tabs__radio {
+            display: none;
+        }
+
+        .tabs__content {
+            order: 1;
+            width: 100%;
+            border-bottom: 3px solid #ddd; 
+            line-height: 1.5;
+            font-size: 0.9em;
+            display: none; 
+            padding: 20px;
+            background: white;
+        }
+
+        @keyframes fadeIN {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .tabs__radio:checked + .tabs__label + .tabs__content {
+            display: block;
+            animation: fadeIN 0.4s ease-in-out;
+        }
+
+        .tabs__radio:checked + .tabs__label {
+            background: white;
+            font-weight: bold;
+            border-bottom: 1px solid white; 
+        }
+
+        .tabs__label:hover {
+            background: #d0d0d0;
+            color: #0078ff;
+            transition: 0.3s;
+        }
+          
+        .flightplan-boxing {
+            border: 1px solid #0000FF;
+            padding: 10px;
+            margin: 10px auto;
+            max-width: 300px;
+            border-radius: 5px;
+        } 
+
+        .stats-badge {
+            font-size: 0.8rem;
+            background: #eee;
+            padding: 3px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        a:link { color: blue; text-decoration: underline; }
+        a:visited { color: blue; text-decoration: none; }
+        a:hover { color: red; text-decoration: none; }
+        a:active { color: green; text-decoration: underline; }
 
