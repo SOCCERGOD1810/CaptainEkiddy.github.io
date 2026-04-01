@@ -1,102 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CaptainEklooder</title>
     <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
-    <style>
-        
-        body {
-            background-image: linear-gradient(-45deg, #001220, #00c5ff, #001220, #0078ff);
-            background-size: 400% 400%;
-            animation: aurora-flow 10s ease infinite;
-            margin: 20px auto;
-            font-family: 'Ramabhadra', sans-serif;
-            text-align: center;
-        }
-
-        @keyframes aurora-flow {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .tabs {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1000px;
-            text-align: center;
-            justify-content: center;
-            margin: 0 auto;
-        }
-
-        .tabs__label {
-            padding: 15px 21px;
-            cursor: pointer;
-            background: #e0e0e0;
-            border: 1px solid #ccc;
-        }
-
-        .tabs__radio {
-            display: none;
-        }
-
-        .tabs__content {
-            order: 1;
-            width: 100%;
-            border-bottom: 3px solid #ddd; 
-            line-height: 1.5;
-            font-size: 0.9em;
-            display: none; 
-            padding: 20px;
-            background: white;
-        }
-
-        @keyframes fadeIN {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .tabs__radio:checked + .tabs__label + .tabs__content {
-            display: block;
-            animation: fadeIN 0.4s ease-in-out;
-        }
-
-        .tabs__radio:checked + .tabs__label {
-            background: white;
-            font-weight: bold;
-            border-bottom: 1px solid white; 
-        }
-
-        .tabs__label:hover {
-            background: #d0d0d0;
-            color: #0078ff;
-            transition: 0.3s;
-        }
-          
-        .flightplan-boxing {
-            border: 1px solid #0000FF;
-            padding: 10px;
-            margin: 10px auto;
-            max-width: 300px;
-            border-radius: 5px;
-        } 
-
-        .stats-badge {
-            font-size: 0.8rem;
-            background: #eee;
-            padding: 3px 10px;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
-        }
-
-        a:link { color: blue; text-decoration: underline; }
-        a:visited { color: blue; text-decoration: none; }
-        a:hover { color: red; text-decoration: none; }
-        a:active { color: green; text-decoration: underline; }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -153,23 +62,20 @@
                 <br> <span class="stats-badge">~1690 NM</span>
             </div>
 
-            <p>More plans will be added soon!</p>
-            <p>--------------------------------------------------------------------------------------------------------------</p>
-            <h3>This is the GEOFS Addons I recommend using for your GEOFS play session!</h3>
-            <h4>Copy-paste your code into your tampermonkey or the console area on your computer</h4>
+            <hr>
+            <h3>GEOFS Addons Recommended</h3>
             <div class="flightplan-boxing">
-            <p><a href="https://github.com/kolos26/GEOFS-LiverySelector/blob/main/main.js" target="_blank">GEOFS Livery Selector</a></p>
-                <p>When you paste the code in, you will see this LS thing in the bottom part where you see the planes and stuff! Click that and pick what livery you want!</p>
+                <p><a href="https://github.com/kolos26/GEOFS-LiverySelector/blob/main/main.js" target="_blank">GEOFS Livery Selector</a></p>
+                <p>Click LS in the bottom UI to pick your livery!</p>
             </div>
-           <div class="flightplan-boxing">
-            <p><a href="https://github.com/CementAndRebar/GeoFS-Pushback/blob/main/main.js">GEOFS Pushback tug</a></p>
-               <p>This is the pushback thing. At the bottom where the livery selector is, there will be the pushback thing, click on it and you'll see the pushback! You can control the speed and the way it turns!</p>
-           </div>
             <div class="flightplan-boxing">
-                <p><a href="https://geofs.fandom.com/wiki/GeoFS_Addons">Geofs Addons website</a></p>
-                <p>This website has all the other addons! Look through the addons and find out what you want to use!</p>
+                <p><a href="https://github.com/CementAndRebar/GeoFS-Pushback/blob/main/main.js" target="_blank">GEOFS Pushback tug</a></p>
+                <p>Control speed and turning for your pushback!</p>
             </div>
-            <p>More will be added later!</p>
+            <div class="flightplan-boxing">
+                <p><a href="https://geofs.fandom.com/wiki/GeoFS_Addons" target="_blank">Geofs Addons Website</a></p>
+                <p>Find even more community-made tools here.</p>
+            </div>
         </div>
 
         <input type="radio" class="tabs__radio" name="tabs-example" id="gamingstuff">
@@ -178,78 +84,56 @@
             <h1>Minecraft</h1>
             <h3>Seeds & Builds</h3>
             <p>Best seeds for Minecraft Java!</p>
-
             <p>306261334676528482</p>
             <p>8486672581758651406</p>
-            <p>--------------------------------------------------------------------------------------------------------------</p>
+            <hr>
             <h1>Fc Mobile</h1>
-            <h3>This is my FC Mobile team!</h3>
+            <h3>My Team (118 OVR)</h3>
             <img src="MyCurrenteam.png" alt="My Fc Mobile Team" style="max-width:100%; height:auto;">
-            <p>Total OVR: 118!</p>    
-            <p>Bench players: 
-                <br> <img src="Hagi.png" alt="Hagi" style="max-width:100%; height:auto;"> 
-                <br> <img src="Lewandowski.png" alt="Lewandowski" style="max-width:100%; height:auto;"> 
-                <br> <img src="Enzo Fernandez.png" alt="Enzo Fernandez" style="max-width:100%; height:auto;"> 
-                <br> <img src="De Jong.png" alt="De Jong" style="max-width:100%; height:auto;"></p>
-                         <br>
-                <p>--------------------------------------------------------------------------------------------------------------</p>
+            <p>Bench: Hagi, Lewandowski, Enzo Fernandez, De Jong</p>
+            <hr>
             <h1>My Coded Games</h1>
-            <h3>These are my games</h3>
             <p><a href="https://scratch.mit.edu/projects/924035798/fullscreen/" target="_blank">Minecraft Mob Invasion!</a></p>
-            <p>--------------------------------------------------------------------------------------------------------------</p>
-
         </div>
 
         <input type="radio" class="tabs__radio" name="tabs-example" id="stories">
         <label for="stories" class="tabs__label">Stories</label>
         <div class="tabs__content">
-            <h3>These are my stories!</h3>
+            <h3>Creative Writing</h3>
             <p><a href="https://docs.google.com/document/d/16TqIPGitjR70qac4hi7hSAcU22C2cs1RETxcgUGc1kc/edit?tab=t.0" target="_blank">The night days!</a></p>
-        </div>        
+        </div>
 
-                <input type="radio" class="tabs__radio" name="tabs-example" id="mysoccer">
+        <input type="radio" class="tabs__radio" name="tabs-example" id="mysoccer">
         <label for="mysoccer" class="tabs__label">My Soccer Stats</label>
         <div class="tabs__content">
-            <style>
-                table {
-                    font-family: arial, san-serif;
-                    border-collapse: collapse;
-                    width: 100%;
-                }
-
-                td, th {
-                    border: 1px solid #dddddd;
-                    text-align: left;
-                    padding: 8px;
-                }
-
-                tr:nth-child(even) {
-                    background-color: #dddddd
-                }
-            </style>
-            <h3>These are my stats</h3>
+            <h3>Season Performance</h3>
             <table>
-                <tr>
-                    <th>Season</th>
-                    <th>Goals</th>
-                    <th>Assists</th>
-                </tr>
-                <tr>
-                    <td>Season 1</td>
-                    <td>3 Goals</td>
-                    <td>1 Assist</td>
-                </tr>
-                <tr>
-                    <td>Season 2</td>
-                    <td>3 Goals</td>
-                    <td>4 Assists</td>
-                </tr>
-                <tr>
-                    <td>Season 3</td>
-                    <td>1 Goals</td>
-                    <td>1 Assists</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Season</th>
+                        <th>Goals</th>
+                        <th>Assists</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Season 1</td>
+                        <td>3</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Season 2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Season 3</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
             </table>
+        </div>
     </div>
 </body>
 </html>
