@@ -108,6 +108,50 @@ body {
     margin-top: 10px;
 }
 
+.pitch {
+  background: #00ef0c; /* Grass green */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 650px; /* Adjust based on preference */
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player {
+  width: 150px; /* Size for FC Mobile card images */
+  height: auto;
+}
+
+
+.cdm-wrapper {
+  margin-top: 40px; /* Pushes the CDM deeper toward the defense */
+}
+
+/* This makes the image fit perfectly inside the player-card div */
+.player-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Keeps the card's shape without stretching it */
+    border-radius: 4px;  /* Matches the corner roundness of the card */
+}
+
+/* Updated player-card style to remove the gold background  */
+.player-card {
+    width: 50px;
+    height: 70px;
+    background: transparent; /* Changed from gold to transparent */
+    border: none;            /* Removed the white border since cards usually have their own */
+    margin-top: -45px; 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
 a:link { color: rgb(0, 17, 255); text-decoration: underline; }
 a:visited { color: rgb(255, 255, 255); text-decoration: none; }
 a:hover { color: red; text-decoration: none; }
