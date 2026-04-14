@@ -170,10 +170,10 @@ body {
 }
 
 .player-card {
-    width: 80px;  /* Adjusted size */
+    width: 150px;  
     height: 100px;
     background: transparent; 
-    margin-top: -60px; /* This sits them on the bench */
+    margin-top: -60px; 
     transition: transform 0.2s;
     cursor: pointer;
     z-index: 2;
