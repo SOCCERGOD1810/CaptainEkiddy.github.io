@@ -109,11 +109,11 @@ body {
 }
 
 .pitch {
-  background: #00ef0c; /* Grass green */
+  background: #00ef0c; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 650px; /* Adjust based on preference */
+  height: 650px; 
   padding: 20px;
 }
 
@@ -124,32 +124,69 @@ body {
 }
 
 .player {
-  width: 150px; /* Size for FC Mobile card images */
+  width: 150px; 
   height: auto;
 }
 
 
 .cdm-wrapper {
-  margin-top: 40px; /* Pushes the CDM deeper toward the defense */
+  margin-top: 55px; 
 }
 
-/* This makes the image fit perfectly inside the player-card div */
+
 .player-card img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Keeps the card's shape without stretching it */
-    border-radius: 4px;  /* Matches the corner roundness of the card */
+    object-fit: contain; 
+    border-radius: 4px;  
 }
 
-/* Updated player-card style to remove the gold background  */
+.bench-container {
+    margin: 80px auto 40px auto;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bench-surface {
+    background: linear-gradient(to bottom, #8B4513, #5D2E0C); /* Wood color */
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    border-bottom: 5px solid #3e1f08;
+}
+
+.bench-legs {
+    width: 90%;
+    height: 20px;
+    border-left: 15px solid #3e1f08;
+    border-right: 15px solid #3e1f08;
+}
+
 .player-card {
-    width: 50px;
-    height: 70px;
-    background: transparent; /* Changed from gold to transparent */
-    border: none;            /* Removed the white border since cards usually have their own */
-    margin-top: -45px; 
+    width: 80px;  /* Adjusted size */
+    height: 100px;
+    background: transparent; 
+    margin-top: -60px; /* This sits them on the bench */
     transition: transform 0.2s;
     cursor: pointer;
+    z-index: 2;
+}
+
+.player-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+.player-card:hover {
+    transform: translateY(-20px) scale(1.2);
 }
 
 a:link { color: rgb(0, 17, 255); text-decoration: underline; }
