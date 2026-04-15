@@ -141,52 +141,59 @@ body {
     border-radius: 4px;  
 }
 
+
 .bench-container {
-    margin: 80px auto 40px auto;
+    margin: 150px auto 50px auto; 
     width: 100%;
-    max-width: 600px;
+    max-width: 900px; 
     display: flex;
     flex-direction: column;
     align-items: center;
+    clear: both;
 }
 
+
 .bench-surface {
-    background: linear-gradient(to bottom, #8B4513, #5D2E0C); /* Wood color */
+    background: linear-gradient(to bottom, #8B4513, #5D2E0C);
     width: 100%;
     height: 40px;
-    border-radius: 5px;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-    border-bottom: 5px solid #3e1f08;
+    gap: 15px; 
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    position: relative;
 }
+
+
+.player-card {
+    width: 150px !important;  
+    height: 200px !important; 
+    margin-top: -130px !important; 
+    background: transparent;
+    transition: transform 0.2s;
+    z-index: 5;
+    cursor: pointer;
+}
+
+
+.player-card img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+    display: block;
+}
+
 
 .bench-legs {
     width: 90%;
-    height: 20px;
-    border-left: 15px solid #3e1f08;
-    border-right: 15px solid #3e1f08;
-}
-
-.player-card {
-    width: 150px;  
-    height: 100px;
-    background: transparent; 
-    margin-top: -60px; 
-    transition: transform 0.2s;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.player-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; 
+    height: 25px;
+    border-left: 20px solid #3e1f08;
+    border-right: 20px solid #3e1f08;
 }
 
 .player-card:hover {
-    transform: translateY(-20px) scale(1.2);
+    transform: translateY(-30px) scale(1.1);
 }
 
 a:link { color: rgb(0, 17, 255); text-decoration: underline; }
