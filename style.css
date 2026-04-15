@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(-45deg, #001220, #002886, #001220, #013979);
+    background-image: linear-gradient(-45deg, #00487e, #002886, #001220, #013979);
     background-size: 400% 400%;
     animation: aurora-flow 10s ease infinite;
     margin: 0;
@@ -113,7 +113,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 650px; 
+  height: 1000px; 
   padding: 20px;
 }
 
@@ -131,6 +131,14 @@ body {
 
 .cdm-wrapper {
   margin-top: 55px; 
+}
+
+.lw-wrapper {
+    margin-top: 50px;
+}
+
+.rw-wrapper {
+    margin-top: 50px;
 }
 
 
