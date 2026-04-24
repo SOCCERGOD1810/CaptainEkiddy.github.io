@@ -131,17 +131,9 @@ body {
 
 .cdm-wrapper {
   margin-top: 55px; 
-  margin-left: 200px;
 }
 
-.cdm1-wrapper {
-    margin-top: 55px;
-    Margin-right: 200px;
-}
 
-.cam-wrapper {
-    margin-top: -55px;
-}
 .lw-wrapper {
     margin-top: 50px;
     
@@ -213,7 +205,6 @@ body {
 .player-card:hover {
     transform: translateY(-30px) scale(1.1);
 }
-
 
 
 a:link { color: rgb(0, 17, 255); text-decoration: underline; }
