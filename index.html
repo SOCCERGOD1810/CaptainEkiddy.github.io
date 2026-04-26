@@ -16,21 +16,21 @@
         <input id="myText"> <br><br>
         <button id="myButton">Submit</button> <br> <br> <br> <br>
     </div>
-
+    <!--Tabs code-->
     <div class="tabs">
         <input type="radio" class="tabs__radio" name="tabs-example" id="home" checked>
         <label for="home" class="tabs__label">Home Page</label>
         <div class="tabs__content">
             <h3>Home Page</h3>
             <p>Hello there! This is <strong>CaptainEklooder</strong> and welcome to the website! A website where you can browse any of CaptainEklooder's interests! Let it be GEOFS or Minecraft. It has everything I like, and more will be added soon!! Enjoy!</p>
-            <h4 style="text-align: left;">More about me!</h4>                      
-
-            <ul style="list-style-type: disc; padding-left: 20px;">
-                <li><h4 style="text-align: left; margin: 5px 0;">I like soccer!</h4></li>
-                <li><h4 style="text-align: left; margin: 5px 0;">I'm in NCFC youth recreation</h4></li>
-                <li><h4 style="text-align: left; margin: 5px 0;">I also like planes! The 777-300ER is my favorite</h4></li>
-                <li><h4 style="text-align: left; margin: 5px 0;">I'm in 6th grade!</h4></li>
-                <li><h4 style="text-align: left; margin: 5px 0;">I just started coding!</h4></li>
+            <h4 style="text-align: left;">More about me!</h4>                    
+            <!--List of about me-->
+            <ul>
+                <li><h4 style="text-align: left;">I like soccer!</h4></li>
+                <li><h4 style="text-align: left;">I'm in NCFC youth recreation</h4></li>
+                <li><h4 style="text-align: left;">I also like planes! The 777-300ER is my favorite</h4></li>
+                <li><h4 style="text-align: left;">I'm in 6th grade!</h4></li>
+                <li><h4 style="text-align: left;">I just started coding!</h4></li>
             </ul>
         </div>
 
@@ -41,7 +41,7 @@
             <p>On this tab are the GEOFS flight plans that I flew in the past! Feel free to browse domestic and international flights I've done!</p>
 
             <h2>Plans</h2>
-
+            <!--International Flights-->
             <h3>International flights</h3>
             <div class="flightplan-boxing">
                 <span class="stats-badge"><a href="https://docs.google.com/document/d/1drOcpWihWWUTwdiZ33_rrQKfP0FANQeNKbQ1PLWBjo8/edit?tab=t.0" target="_blank">EHAM→SAEZ</a></span>
@@ -93,13 +93,12 @@
         <label for="planepic" class="tabs__label">Plane Gallery</label>
         <div class="tabs__content">
             <h3>The plane Gallery</h3>
-
-                <img src="photos/1000025171.jpg" alt="Plane" style="width: 900px;">
-                    <p> Air France 787-9 | KRDU-LFPG </p>
-                <img src="photos/1000025205.jpg" alt="Plane" style="width: 900px;">
-                    <p> Lufthansa A330-300 | KRDU-EDDF </p>
-                <img src="photos/1000025802.jpg" alt="Plane" style="width: 900px;">
-                    <p> Lufthansa A33-300 | KRDU-EDDF </p>
+            <img src="photos/1000025171.jpg" alt="Plane" style="width: 900px;">
+            <p> Air France 787-9 | KRDU-LFPG </p>
+            <img src="photos/1000025205.jpg" alt="Plane" style="width: 900px;">
+            <p> Lufthansa A330-300 | KRDU-EDDF </p>
+            <img src="photos/1000025802.jpg" alt="Plane" style="width: 900px;">
+            <p> Lufthansa A33-300 | KRDU-EDDF </p>
         </div>
 
         <input type="radio" class="tabs__radio" name="tabs-example" id="gamingstuff">
@@ -110,26 +109,46 @@
             <hr>
             <h1>Fc Mobile</h1>
             <div class="pitch">
-                <img src="photos/119.png" style="width: 150px;">
-                <p style="text-align: left; font-size: 30px">Formation: 4-3-3 holding</p>
+                <img src="photos/120.png" style="width: 300px; justify-content: left;">
+                <p style="text-align: left; font-size: 30px">Formation: 4-2-3-1 wide</p>
                 
                 <div class="row forwards">
-                    <div class="lw-wrapper"><img src="photos/C. Ronaldo.png" class="player"></div>
-                    <img src="photos/Henry.png" class="player">
-                    <div class="rw-wrapper"><img src="photos/Messi.png" class="player"></div>
+                    
+                    <img src="photos/Henry.png" class="player"> 
+                    
                 </div>
 
                 <div class="row midfielders">
-                    <img src="photos/McTominay.png" class="player">
-                    <div class="cdm-wrapper"><img src="photos/Marc Bernal.png" class="player"></div>
-                    <img src="photos/Rice.png" class="player">
+                    <div class="lm-wrapper">
+                        <img src="photos/Afonso Moreira.png" class="player"> 
+                    </div>
+                    
+                    
+                    <div class="cdm-wrapper">
+                        <img src="photos/Marc Bernal.png" class="player">
+                    </div>
+                    <div class="cam-wrapper">
+                        <img src="photos/Messi.png" class="player">
+                    </div>
+                    <div class="cdm-wrapper1">
+                        <img src="photos/Rice.png" class="player">
+                    </div>
+                    <div class="rm-wrapper">
+                        <img src="photos/Olise.png" class="player"> 
+                    </div>
                 </div>
 
                 <div class="row defenders">
-                    <img src="photos/Joao Cancelo.png" class="player">
+                    <div class="lb-wrapper">
+                        <img src="photos/Joao Cancelo.png" class="player">
+                    </div>
+                    
                     <img src="photos/van Dijk.png" class="player">
                     <img src="photos/Carles Puyol.png" class="player">
-                    <img src="photos/Kounde.png" class="player">
+                    
+                    <div class="rb-wrapper">
+                        <img src="photos/Kounde.png" class="player">
+                    </div>
                 </div>
 
                 <div class="row goalkeeper">
@@ -137,14 +156,15 @@
                 </div>
             </div>
             <div class="bench-container">
-                    <div class="bench-surface">
-                        <div class="player-card"><img src="photos/Gvardiol.png" alt="Gvardiol"></div>
-                        <div class="player-card"><img src="photos/Muslera.png" alt="Muslera"></div>
-                        <div class="player-card"><img src="photos/Ekitike.png" alt="Ekitike"></div>
-                        <div class="player-card"><img src="photos/Afonso Moreira.png" alt="Afonso Moreira"></div>
-                    </div>
-                    <div class="bench-legs"></div> 
+                <div class="bench-surface">
+                    <div class="player-card"><img src="photos/Gvardiol.png" alt="Gvardiol"></div>
+                    <div class="player-card"><img src="photos/C. Ronaldo.png" alt="C. Ronaldo"></div>
+                    <div class="player-card"><img src="photos/Ekitike.png" alt="Ekitike"></div>
                 </div>
+                <div class="bench-legs"></div> 
+            </div>
+            <p>Not all players are fully ranked and trained. The reason it looks that way is because I download the cards from RenderZ. If I download a card and later train it to level 25, but the image still shows level 20, I would need to download a new card. Doing that every time would take up too much storage, so I just download the maxed out version of the card instead</p>
+            <p>The Marc Bernal card is actually 121 rated fully because he got a +1 ovr upgrade. But it didn't show up on RenderZ. Just remember that Marc Bernal is 121 rated.</p>
             <hr>
             <h1>My Coded Games</h1>
             <iframe src="https://scratch.mit.edu/projects/924035798/embed" width="785" height="502" frameborder="0" allowfullscreen></iframe>
@@ -159,10 +179,32 @@
         <input type="radio" class="tabs__radio" name="tabs-example" id="mysoccer">
         <label for="mysoccer" class="tabs__label">My Soccer Stats</label>
         <div class="tabs__content">
+            <!--Soccer season Tabel-->
             <table>
-                <tr><th>Season</th><th>Goals</th><th>Assists</th></tr>
-                <tr><td>Season 1</td><td>3</td><td>1</td></tr>
-                <tr><td>Season 2</td><td>3</td><td>4</td></tr>
+                <tr>
+                    <!--The headings basically.-->
+                    <th>Season</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                </tr>
+                <tr>
+                    <!--Season 1 stats-->
+                    <td>Season 1</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <!--Season 2 stats-->
+                    <td>Season 2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <!--Season 3 stats-->
+                    <td>Season 3</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
             </table>
         </div>
     </div>

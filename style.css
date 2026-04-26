@@ -112,8 +112,8 @@ body {
   background: #00ef0c; 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 1500px; 
+  justify-content: space-between;
   padding: 20px;
 }
 
@@ -134,16 +134,30 @@ body {
 }
 
 
-.lw-wrapper {
-    margin-top: 50px;
+.lm-wrapper {
+    margin-top: -100px;
     
 }
 
-.rw-wrapper {
-    margin-top: 50px;
+.rm-wrapper {
+    margin-top: -100px;
 }
 
+.cdm-wrapper1 {
+    margin-top: 55px;
+}
 
+.cam-wrapper {
+    margin-top: -200px
+}
+
+.lb-wrapper {
+    margin-top: -50px;
+}
+
+.rb-wrapper {
+    margin-top: -50px;
+}
 .player-card img {
     width: 100%;
     height: 100%;
